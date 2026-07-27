@@ -1,0 +1,3069 @@
+royal-mattress/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── app.js
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="فروشگاه اینترنتی تشک رویال؛ خرید انواع تشک طبی، فنری، هیبریدی و هتلی با ضمانت معتبر."
+    >
+
+    <meta name="theme-color" content="#090b1a">
+
+    <title>رویال | تجربه یک خواب سلطنتی</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="#home" class="brand" aria-label="صفحه اصلی رویال">
+                <span class="brand-crown" aria-hidden="true">♛</span>
+
+                <span class="brand-content">
+                    <strong>رویال</strong>
+                    <small>خواب سلطنتی</small>
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="منوی اصلی">
+                <a href="#home" class="nav-link active">خانه</a>
+                <a href="#products" class="nav-link">محصولات</a>
+                <a href="#categories" class="nav-link">دسته‌بندی‌ها</a>
+                <a href="#collection" class="nav-link">کالکشن ویژه</a>
+                <a href="#reviews" class="nav-link">نظرات مشتریان</a>
+            </nav>
+
+            <div class="header-actions">
+                <button
+                    class="icon-button search-toggle"
+                    id="searchToggle"
+                    type="button"
+                    aria-label="باز کردن جست‌وجو"
+                >
+                    <span aria-hidden="true">⌕</span>
+                </button>
+
+                <button
+                    class="icon-button cart-toggle"
+                    id="cartToggle"
+                    type="button"
+                    aria-label="مشاهده سبد خرید"
+                >
+                    <span aria-hidden="true">🛒</span>
+                    <span class="cart-count" id="cartCount">۰</span>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="باز کردن منو"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="header-search" id="headerSearch">
+            <div class="container header-search-inner">
+                <label for="globalSearch">جست‌وجوی محصولات</label>
+
+                <div class="search-field">
+                    <span aria-hidden="true">⌕</span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="نام یا نوع تشک را وارد کنید..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="closeSearch"
+                        type="button"
+                        aria-label="بستن جست‌وجو"
+                    >
+                        ×
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <nav aria-label="منوی موبایل">
+                <a href="#home">خانه</a>
+                <a href="#products">محصولات</a>
+                <a href="#categories">دسته‌بندی‌ها</a>
+                <a href="#collection">کالکشن ویژه</a>
+                <a href="#reviews">نظرات مشتریان</a>
+            </nav>
+
+            <a href="#products" class="button button-primary">
+                شروع خرید
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero section" id="home">
+            <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+            <div class="container hero-layout">
+                <div class="hero-content reveal">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        نسل جدید کالکشن خواب رویال
+                    </div>
+
+                    <h1>
+                        هر شب،
+                        <span>یک خواب سلطنتی</span>
+                        را تجربه کنید
+                    </h1>
+
+                    <p class="hero-description">
+                        تشک‌های رویال با ترکیب طراحی ارگونومیک، متریال
+                        پیشرفته و استانداردهای جهانی ساخته شده‌اند تا
+                        شروع هر روز شما با آرامش و انرژی بیشتری همراه باشد.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#products" class="button button-primary">
+                            مشاهده محصولات
+                            <span aria-hidden="true">←</span>
+                        </a>
+
+                        <a href="#collection" class="button button-glass">
+                            راهنمای انتخاب تشک
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="trust-avatars" aria-hidden="true">
+                            <img
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=96&q=80"
+                                alt=""
+                            >
+                            <img
+                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=96&q=80"
+                                alt=""
+                            >
+                            <img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&q=80"
+                                alt=""
+                            >
+                        </div>
+
+                        <div>
+                            <div class="trust-stars" aria-label="امتیاز ۴.۹ از ۵">
+                                ★ ★ ★ ★ ★
+                            </div>
+                            <p>انتخاب بیش از ۱۲٬۰۰۰ خانواده ایرانی</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="royal-ring ring-one" aria-hidden="true"></div>
+                    <div class="royal-ring ring-two" aria-hidden="true"></div>
+
+                    <div class="product-stage">
+                        <div class="floating-badge badge-top">
+                            <span class="badge-icon">✦</span>
+                            <span>
+                                <small>ضمانت کیفیت</small>
+                                <strong>۱۰ ساله</strong>
+                            </span>
+                        </div>
+
+                        <div class="floating-badge badge-bottom">
+                            <span class="badge-icon">◈</span>
+                            <span>
+                                <small>ارسال و نصب</small>
+                                <strong>رایگان</strong>
+                            </span>
+                        </div>
+
+                        <div class="mattress-visual" aria-hidden="true">
+                            <div class="mattress-pillow pillow-one"></div>
+                            <div class="mattress-pillow pillow-two"></div>
+                            <div class="mattress-top">
+                                <div class="mattress-pattern"></div>
+                            </div>
+                            <div class="mattress-side"></div>
+                            <div class="mattress-base"></div>
+                        </div>
+
+                        <div class="hero-product-label">
+                            <div>
+                                <small>مدل ویژه ۱۴۰۵</small>
+                                <strong>Royal Imperial</strong>
+                            </div>
+
+                            <span>از ۳۹ میلیون</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container trust-bar reveal">
+                <article>
+                    <span>✓</span>
+                    <div>
+                        <strong>۱۰۰ شب تست خواب</strong>
+                        <small>تجربه بدون ریسک در منزل</small>
+                    </div>
+                </article>
+
+                <article>
+                    <span>♛</span>
+                    <div>
+                        <strong>ضمانت اصالت</strong>
+                        <small>گارانتی رسمی رویال</small>
+                    </div>
+                </article>
+
+                <article>
+                    <span>⚡</span>
+                    <div>
+                        <strong>ارسال سریع</strong>
+                        <small>تحویل رایگان در سراسر کشور</small>
+                    </div>
+                </article>
+
+                <article>
+                    <span>☎</span>
+                    <div>
+                        <strong>مشاوره تخصصی</strong>
+                        <small>انتخاب متناسب با بدن شما</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section categories-section" id="categories">
+            <div class="container">
+                <header class="section-header reveal">
+                    <div>
+                        <span class="section-kicker">انتخاب هوشمندانه</span>
+                        <h2>تشک مناسب سبک خواب شما</h2>
+                    </div>
+
+                    <p>
+                        از تشک‌های طبی تا مدل‌های لوکس هتلی؛
+                        مجموعه‌ای تخصصی برای نیازهای متفاوت.
+                    </p>
+                </header>
+
+                <div class="category-grid">
+                    <button
+                        class="category-card category-medical reveal"
+                        type="button"
+                        data-category-link="medical"
+                    >
+                        <span class="category-number">۰۱</span>
+                        <span class="category-icon">✚</span>
+                        <strong>تشک طبی</strong>
+                        <small>حمایت استاندارد از ستون فقرات</small>
+                        <span class="category-arrow">←</span>
+                    </button>
+
+                    <button
+                        class="category-card category-hybrid reveal"
+                        type="button"
+                        data-category-link="hybrid"
+                    >
+                        <span class="category-number">۰۲</span>
+                        <span class="category-icon">◉</span>
+                        <strong>تشک هیبریدی</strong>
+                        <small>ترکیب مموری فوم و فنر پاکتی</small>
+                        <span class="category-arrow">←</span>
+                    </button>
+
+                    <button
+                        class="category-card category-spring reveal"
+                        type="button"
+                        data-category-link="spring"
+                    >
+                        <span class="category-number">۰۳</span>
+                        <span class="category-icon">⌁</span>
+                        <strong>تشک فنری</strong>
+                        <small>انعطاف‌پذیر و مناسب استفاده روزانه</small>
+                        <span class="category-arrow">←</span>
+                    </button>
+
+                    <button
+                        class="category-card category-hotel reveal"
+                        type="button"
+                        data-category-link="hotel"
+                    >
+                        <span class="category-number">۰۴</span>
+                        <span class="category-icon">♛</span>
+                        <strong>کالکشن هتلی</strong>
+                        <small>تجربه لوکس اقامتگاه‌های پنج ستاره</small>
+                        <span class="category-arrow">←</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section products-section" id="products">
+            <div class="container">
+                <header class="section-header reveal">
+                    <div>
+                        <span class="section-kicker">فروشگاه رویال</span>
+                        <h2>محبوب‌ترین محصولات</h2>
+                    </div>
+
+                    <p>
+                        محصولات را جست‌وجو، مقایسه و متناسب با نیاز خود انتخاب کنید.
+                    </p>
+                </header>
+
+                <div class="product-toolbar reveal">
+                    <div class="product-search">
+                        <span aria-hidden="true">⌕</span>
+
+                        <input
+                            id="productSearch"
+                            type="search"
+                            placeholder="جست‌وجوی نام یا ویژگی محصول..."
+                        >
+                    </div>
+
+                    <div class="sort-control">
+                        <label for="sortProducts">مرتب‌سازی:</label>
+
+                        <select id="sortProducts">
+                            <option value="featured">پیشنهاد رویال</option>
+                            <option value="rating">بیشترین امتیاز</option>
+                            <option value="low">کمترین قیمت</option>
+                            <option value="high">بیشترین قیمت</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-chips reveal" id="filterChips">
+                    <button class="filter-chip active" data-filter="all">
+                        همه محصولات
+                    </button>
+                    <button class="filter-chip" data-filter="medical">
+                        طبی
+                    </button>
+                    <button class="filter-chip" data-filter="hybrid">
+                        هیبریدی
+                    </button>
+                    <button class="filter-chip" data-filter="spring">
+                        فنری
+                    </button>
+                    <button class="filter-chip" data-filter="hotel">
+                        هتلی
+                    </button>
+                </div>
+
+                <div
+                    class="products-grid"
+                    id="productsGrid"
+                    aria-live="polite"
+                ></div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <span>⌕</span>
+                    <h3>محصولی پیدا نشد</h3>
+                    <p>عبارت جست‌وجو یا فیلتر انتخاب‌شده را تغییر دهید.</p>
+                    <button class="button button-glass" id="resetFilters">
+                        نمایش همه محصولات
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured collection -->
+        <section class="section collection-section" id="collection">
+            <div class="container">
+                <div class="collection-card reveal">
+                    <div class="collection-visual">
+                        <div class="collection-glow" aria-hidden="true"></div>
+
+                        <div class="collection-image-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=90"
+                                alt="تشک لوکس کالکشن امپریال رویال"
+                            >
+                        </div>
+
+                        <div class="collection-rating">
+                            <span>★ ۴.۹</span>
+                            <small>بر اساس ۲٬۴۸۰ نظر</small>
+                        </div>
+                    </div>
+
+                    <div class="collection-content">
+                        <span class="section-kicker">کالکشن برگزیده</span>
+
+                        <h2>
+                            امپریال پلاس؛
+                            <span>تعریف دوباره آرامش</span>
+                        </h2>
+
+                        <p>
+                            ترکیب هفت لایه تخصصی شامل مموری فوم هوشمند،
+                            لاتکس طبیعی و فنرهای پاکتی مستقل برای کاهش
+                            فشار روی بدن و جلوگیری از انتقال حرکت.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <span>✓</span>
+                                مموری فوم تنظیم‌شونده با دمای بدن
+                            </li>
+                            <li>
+                                <span>✓</span>
+                                فنر پاکتی مستقل با حداقل انتقال حرکت
+                            </li>
+                            <li>
+                                <span>✓</span>
+                                پارچه تنفس‌پذیر و آنتی‌باکتریال
+                            </li>
+                            <li>
+                                <span>✓</span>
+                                مناسب افراد دارای کمردرد
+                            </li>
+                        </ul>
+
+                        <div class="collection-purchase">
+                            <div class="collection-price">
+                                <small>قیمت کالکشن از</small>
+                                <strong>۳۹٬۸۰۰٬۰۰۰ تومان</strong>
+                            </div>
+
+                            <button
+                                class="button button-primary"
+                                type="button"
+                                data-add-product="4"
+                            >
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale -->
+        <section class="section sale-section" id="sale">
+            <div class="container">
+                <div class="sale-card reveal">
+                    <div class="sale-content">
+                        <span class="sale-label">فروش ویژه تابستان</span>
+
+                        <h2>
+                            تا <span>۲۵٪ تخفیف</span>
+                            برای شروع یک خواب بهتر
+                        </h2>
+
+                        <p>
+                            کد تخفیف
+                            <button
+                                class="discount-code"
+                                id="copyDiscount"
+                                type="button"
+                                data-code="ROYAL25"
+                            >
+                                ROYAL25
+                            </button>
+                            را هنگام ثبت سفارش وارد کنید.
+                        </p>
+
+                        <a href="#products" class="button button-light">
+                            خرید با تخفیف
+                            <span>←</span>
+                        </a>
+                    </div>
+
+                    <div class="countdown-wrap">
+                        <small>زمان باقی‌مانده تا پایان فروش</small>
+
+                        <div class="countdown" id="countdown">
+                            <div>
+                                <strong id="days">۰۳</strong>
+                                <span>روز</span>
+                            </div>
+                            <div>
+                                <strong id="hours">۱۲</strong>
+                                <span>ساعت</span>
+                            </div>
+                            <div>
+                                <strong id="minutes">۴۵</strong>
+                                <span>دقیقه</span>
+                            </div>
+                            <div>
+                                <strong id="seconds">۲۰</strong>
+                                <span>ثانیه</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section reviews-section" id="reviews">
+            <div class="container">
+                <header class="section-header reveal">
+                    <div>
+                        <span class="section-kicker">صدای مشتریان</span>
+                        <h2>تجربه واقعی خواب با رویال</h2>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button
+                            id="reviewNext"
+                            type="button"
+                            aria-label="نظر بعدی"
+                        >
+                            →
+                        </button>
+
+                        <button
+                            id="reviewPrev"
+                            type="button"
+                            aria-label="نظر قبلی"
+                        >
+                            ←
+                        </button>
+                    </div>
+                </header>
+
+                <div class="reviews-viewport reveal">
+                    <div class="reviews-track" id="reviewsTrack"></div>
+                </div>
+
+                <div
+                    class="review-dots"
+                    id="reviewDots"
+                    aria-label="انتخاب نظر"
+                ></div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-card reveal">
+                    <div>
+                        <span class="section-kicker">باشگاه مشتریان رویال</span>
+                        <h2>پیشنهادهای اختصاصی را از دست ندهید</h2>
+                        <p>
+                            ایمیل خود را ثبت کنید و زودتر از همه از
+                            کالکشن‌ها و تخفیف‌های جدید مطلع شوید.
+                        </p>
+                    </div>
+
+                    <form class="newsletter-form" id="newsletterForm">
+                        <label class="sr-only" for="newsletterEmail">
+                            آدرس ایمیل
+                        </label>
+
+                        <input
+                            id="newsletterEmail"
+                            type="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                        <button class="button button-primary" type="submit">
+                            عضویت
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="#home" class="brand">
+                    <span class="brand-crown">♛</span>
+                    <span class="brand-content">
+                        <strong>رویال</strong>
+                        <small>خواب سلطنتی</small>
+                    </span>
+                </a>
+
+                <p>
+                    طراحی و تولید محصولات خواب با تمرکز بر سلامت،
+                    آرامش و کیفیت زندگی خانواده‌های ایرانی.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="اینستاگرام">◎</a>
+                    <a href="#" aria-label="تلگرام">↗</a>
+                    <a href="#" aria-label="لینکدین">in</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>فروشگاه</h3>
+                <a href="#products">تشک طبی</a>
+                <a href="#products">تشک هیبریدی</a>
+                <a href="#products">تشک فنری</a>
+                <a href="#products">کالکشن هتلی</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>خدمات مشتریان</h3>
+                <a href="#">راهنمای خرید</a>
+                <a href="#">شرایط ضمانت</a>
+                <a href="#">ارسال و تحویل</a>
+                <a href="#">پرسش‌های متداول</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h3>ارتباط با رویال</h3>
+                <a href="tel:02191000000">۰۲۱-۹۱۰۰۰۰۰۰</a>
+                <a href="mailto:hello@royalsleep.ir">hello@royalsleep.ir</a>
+                <span>تهران، خیابان ولیعصر، مرکز رویال</span>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© ۱۴۰۵ کلیه حقوق برای برند رویال محفوظ است.</p>
+            <div>
+                <a href="#">حریم خصوصی</a>
+                <a href="#">قوانین استفاده</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <aside
+        class="cart-drawer"
+        id="cartDrawer"
+        aria-label="سبد خرید"
+        aria-hidden="true"
+    >
+        <div class="drawer-header">
+            <div>
+                <span>سبد خرید شما</span>
+                <small id="cartSummary">۰ محصول</small>
+            </div>
+
+            <button id="closeCart" type="button" aria-label="بستن سبد خرید">
+                ×
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-empty" id="cartEmpty">
+            <span>🛏️</span>
+            <h3>سبد خرید شما خالی است</h3>
+            <p>محصول مورد علاقه خود را به سبد خرید اضافه کنید.</p>
+            <button class="button button-glass" id="startShopping">
+                مشاهده محصولات
+            </button>
+        </div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                <span>مبلغ کل</span>
+                <strong id="cartTotal">۰ تومان</strong>
+            </div>
+
+            <p>هزینه ارسال در مرحله بعد محاسبه می‌شود.</p>
+
+            <button class="button button-primary checkout-button" type="button">
+                ادامه فرایند خرید
+            </button>
+        </div>
+    </aside>
+
+    <!-- Product Modal -->
+    <div
+        class="modal"
+        id="productModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalProductTitle"
+        aria-hidden="true"
+    >
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="product-modal-card">
+            <button
+                class="modal-close"
+                type="button"
+                data-close-modal
+                aria-label="بستن"
+            >
+                ×
+            </button>
+
+            <div class="modal-product-image">
+                <img id="modalProductImage" src="" alt="">
+                <span id="modalProductBadge"></span>
+            </div>
+
+            <div class="modal-product-content">
+                <span class="section-kicker" id="modalProductCategory"></span>
+                <h2 id="modalProductTitle"></h2>
+
+                <div class="modal-rating">
+                    <span>★★★★★</span>
+                    <small id="modalProductRating"></small>
+                </div>
+
+                <p id="modalProductDescription"></p>
+
+                <ul id="modalProductFeatures"></ul>
+
+                <div class="size-selector">
+                    <span>انتخاب ابعاد:</span>
+                    <div>
+                        <button type="button" class="active">۹۰×۲۰۰</button>
+                        <button type="button">۱۲۰×۲۰۰</button>
+                        <button type="button">۱۶۰×۲۰۰</button>
+                    </div>
+                </div>
+
+                <div class="modal-purchase-row">
+                    <strong id="modalProductPrice"></strong>
+                    <button
+                        class="button button-primary"
+                        id="modalAddToCart"
+                        type="button"
+                    >
+                        افزودن به سبد خرید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <span id="toastIcon">✓</span>
+        <p id="toastMessage">محصول به سبد خرید اضافه شد.</p>
+    </div>
+
+    <!-- Mobile bottom navigation -->
+    <nav class="mobile-bottom-nav" aria-label="دسترسی سریع">
+        <a href="#home">
+            <span>⌂</span>
+            خانه
+        </a>
+
+        <a href="#products">
+            <span>◫</span>
+            محصولات
+        </a>
+
+        <button id="mobileCartButton" type="button">
+            <span>🛒</span>
+            سبد خرید
+            <b id="mobileCartCount">۰</b>
+        </button>
+
+        <a href="#reviews">
+            <span>♡</span>
+            نظرات
+        </a>
+    </nav>
+</body>
+</html>
+:root {
+    --bg: #070914;
+    --bg-soft: #0d1023;
+    --surface: rgba(255, 255, 255, 0.07);
+    --surface-strong: rgba(255, 255, 255, 0.11);
+    --surface-light: #f7f5f1;
+
+    --text: #f8f7fb;
+    --text-soft: #b9b9c8;
+    --text-dark: #141421;
+    --muted-dark: #6d6c79;
+
+    --gold: #dcb86c;
+    --gold-light: #ffe4a7;
+    --purple: #7764ff;
+    --purple-dark: #3f2db6;
+    --success: #71d5aa;
+    --danger: #ff7272;
+
+    --border: rgba(255, 255, 255, 0.12);
+    --gold-border: rgba(220, 184, 108, 0.35);
+
+    --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+    --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.18);
+
+    --radius-sm: 14px;
+    --radius-md: 22px;
+    --radius-lg: 32px;
+    --radius-xl: 44px;
+
+    --container: 1240px;
+    --header-height: 88px;
+
+    --transition: 220ms ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 24px);
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 75% 0%, rgba(95, 69, 230, 0.18), transparent 32%),
+        radial-gradient(circle at 15% 28%, rgba(220, 184, 108, 0.08), transparent 30%),
+        var(--bg);
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 1.8;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+::selection {
+    color: #15101f;
+    background: var(--gold);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #070914;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid #070914;
+    border-radius: 20px;
+    background: linear-gradient(var(--gold), var(--purple));
+}
+
+.container {
+    width: min(calc(100% - 40px), var(--container));
+    margin-inline: auto;
+}
+
+.section {
+    position: relative;
+    padding: 110px 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.page-noise {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    opacity: 0.025;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+}
+
+.cursor-glow {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    filter: blur(20px);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+        circle,
+        rgba(111, 86, 255, 0.12),
+        transparent 70%
+    );
+    transition: opacity 300ms ease;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-flex;
+    min-height: 54px;
+    padding: 13px 25px;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button-primary {
+    color: #16111f;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    box-shadow: 0 15px 35px rgba(220, 184, 108, 0.2);
+}
+
+.button-primary:hover {
+    box-shadow: 0 20px 45px rgba(220, 184, 108, 0.3);
+}
+
+.button-glass {
+    color: var(--text);
+    border-color: var(--border);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(16px);
+}
+
+.button-glass:hover {
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.button-light {
+    color: #252037;
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Header */
+
+.main-header {
+    position: fixed;
+    z-index: 80;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--header-height);
+    border-bottom: 1px solid transparent;
+    transition:
+        height var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+}
+
+.main-header.scrolled {
+    height: 74px;
+    border-color: var(--border);
+    background: rgba(7, 9, 20, 0.78);
+    backdrop-filter: blur(25px);
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.brand-crown {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--gold-border);
+    border-radius: 15px;
+    place-items: center;
+    color: var(--gold);
+    font-size: 25px;
+    background: linear-gradient(
+        145deg,
+        rgba(220, 184, 108, 0.16),
+        rgba(255, 255, 255, 0.03)
+    );
+    box-shadow: inset 0 0 18px rgba(220, 184, 108, 0.08);
+}
+
+.brand-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-content strong {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.brand-content small {
+    margin-top: 5px;
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.nav-link {
+    position: relative;
+    padding: 10px 14px;
+    color: var(--text-soft);
+    font-size: 14px;
+    transition: color var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text);
+}
+
+.nav-link::after {
+    position: absolute;
+    right: 50%;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    border-radius: 4px;
+    content: "";
+    transform: translateX(50%);
+    background: var(--gold);
+    transition: width var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 24px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-button,
+.menu-toggle {
+    position: relative;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    place-items: center;
+    cursor: pointer;
+    color: var(--text);
+    background: var(--surface);
+    transition: background var(--transition);
+}
+
+.icon-button:hover {
+    background: var(--surface-strong);
+}
+
+.search-toggle span {
+    font-size: 28px;
+    line-height: 1;
+    transform: rotate(-20deg);
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    left: -5px;
+    display: grid;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border: 2px solid var(--bg);
+    border-radius: 20px;
+    place-items: center;
+    color: #17111f;
+    background: var(--gold);
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.menu-toggle {
+    display: none;
+    padding: 12px 10px;
+}
+
+.menu-toggle span {
+    width: 19px;
+    height: 2px;
+    border-radius: 4px;
+    background: var(--text);
+    transition: var(--transition);
+}
+
+.header-search {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 20px 0 25px;
+    opacity: 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: rgba(7, 9, 20, 0.96);
+    backdrop-filter: blur(25px);
+    transform: translateY(-15px);
+    transition: 250ms ease;
+}
+
+.header-search.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-search-inner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-search label {
+    flex: 0 0 auto;
+    font-weight: 700;
+}
+
+.search-field {
+    display: flex;
+    width: 100%;
+    height: 54px;
+    padding: 0 17px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.search-field input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: var(--text);
+    background: transparent;
+}
+
+.search-field button {
+    border: 0;
+    cursor: pointer;
+    color: var(--text-soft);
+    background: transparent;
+    font-size: 28px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 100vh;
+    padding-top: calc(var(--header-height) + 75px);
+    overflow: hidden;
+}
+
+.hero-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    min-height: 570px;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(8px);
+    pointer-events: none;
+}
+
+.hero-orb-one {
+    top: 8%;
+    left: -180px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+        circle,
+        rgba(96, 66, 221, 0.2),
+        transparent 68%
+    );
+}
+
+.hero-orb-two {
+    right: -220px;
+    bottom: 0;
+    width: 560px;
+    height: 560px;
+    background: radial-gradient(
+        circle,
+        rgba(220, 184, 108, 0.11),
+        transparent 68%
+    );
+}
+
+.eyebrow,
+.section-kicker {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    padding: 7px 13px;
+    border: 1px solid var(--gold-border);
+    border-radius: 30px;
+    align-items: center;
+    gap: 8px;
+    background: rgba(220, 184, 108, 0.08);
+}
+
+.eyebrow-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 12px var(--gold);
+}
+
+.hero h1 {
+    max-width: 680px;
+    margin-top: 22px;
+    font-size: clamp(45px, 5vw, 78px);
+    font-weight: 900;
+    line-height: 1.32;
+    letter-spacing: -2.5px;
+}
+
+.hero h1 span {
+    display: block;
+    color: transparent;
+    background: linear-gradient(100deg, var(--gold-light), var(--gold));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hero-description {
+    max-width: 610px;
+    margin-top: 22px;
+    color: var(--text-soft);
+    font-size: 16px;
+    line-height: 2.1;
+}
+
+.hero-actions {
+    display: flex;
+    margin-top: 32px;
+    gap: 12px;
+}
+
+.hero-trust {
+    display: flex;
+    margin-top: 34px;
+    align-items: center;
+    gap: 16px;
+}
+
+.trust-avatars {
+    display: flex;
+    direction: ltr;
+}
+
+.trust-avatars img {
+    width: 42px;
+    height: 42px;
+    margin-left: -10px;
+    border: 3px solid var(--bg);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.trust-stars {
+    color: var(--gold);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.hero-trust p {
+    color: var(--text-soft);
+    font-size: 12px;
+}
+
+.hero-visual {
+    position: relative;
+    min-height: 540px;
+    perspective: 1100px;
+}
+
+.product-stage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(100%, 570px);
+    height: 470px;
+    border: 1px solid var(--border);
+    border-radius: 45px;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.015)),
+        radial-gradient(circle at 50% 20%, rgba(121, 96, 255, 0.21), transparent 45%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 45px 100px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(20px);
+    transform: translate(-50%, -50%) rotateY(-5deg) rotateX(2deg);
+    transform-style: preserve-3d;
+}
+
+.royal-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(220, 184, 108, 0.16);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotateX(70deg);
+}
+
+.ring-one {
+    width: 570px;
+    height: 570px;
+    animation: ringRotate 18s linear infinite;
+}
+
+.ring-two {
+    width: 430px;
+    height: 430px;
+    animation: ringRotateReverse 13s linear infinite;
+}
+
+.mattress-visual {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    width: 79%;
+    height: 210px;
+    transform: translate(-50%, -50%) rotateX(59deg) rotateZ(-8deg);
+    transform-style: preserve-3d;
+    animation: mattressFloat 5s ease-in-out infinite;
+}
+
+.mattress-top {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 36px;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(224, 221, 235, 0.94)),
+        #fff;
+    box-shadow:
+        inset 0 0 30px rgba(91, 73, 160, 0.08),
+        0 30px 50px rgba(0, 0, 0, 0.3);
+}
+
+.mattress-pattern {
+    width: 100%;
+    height: 100%;
+    opacity: 0.35;
+    background-image:
+        radial-gradient(circle at center, rgba(94, 78, 147, 0.36) 0 2px, transparent 3px),
+        linear-gradient(45deg, transparent 47%, rgba(94, 78, 147, 0.11) 49%, transparent 51%);
+    background-size: 35px 35px, 30px 30px;
+}
+
+.mattress-side {
+    position: absolute;
+    z-index: 2;
+    right: 3%;
+    bottom: -34px;
+    left: 3%;
+    height: 70px;
+    border-radius: 0 0 30px 30px;
+    background: linear-gradient(180deg, #bfb5d0, #6e617e);
+    transform: translateZ(-30px);
+}
+
+.mattress-base {
+    position: absolute;
+    z-index: 1;
+    right: 7%;
+    bottom: -65px;
+    left: 7%;
+    height: 80px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #3a2854, #1b122b);
+    box-shadow: 0 35px 40px rgba(0, 0, 0, 0.38);
+    transform: translateZ(-65px);
+}
+
+.mattress-pillow {
+    position: absolute;
+    z-index: 5;
+    top: 34px;
+    width: 35%;
+    height: 78px;
+    border-radius: 40% 40% 36% 36%;
+    background: linear-gradient(145deg, #fff, #d9d3e3);
+    box-shadow: 0 15px 30px rgba(43, 29, 67, 0.18);
+    transform: translateZ(24px);
+}
+
+.pillow-one {
+    right: 11%;
+}
+
+.pillow-two {
+    left: 11%;
+}
+
+.floating-badge {
+    position: absolute;
+    z-index: 7;
+    display: flex;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    align-items: center;
+    gap: 10px;
+    background: rgba(13, 16, 35, 0.73);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(18px);
+    animation: badgeFloat 4s ease-in-out infinite;
+}
+
+.badge-top {
+    top: 50px;
+    right: -24px;
+}
+
+.badge-bottom {
+    bottom: 90px;
+    left: -26px;
+    animation-delay: -2s;
+}
+
+.badge-icon {
+    display: grid;
+    width: 37px;
+    height: 37px;
+    border-radius: 12px;
+    place-items: center;
+    color: var(--gold);
+    background: rgba(220, 184, 108, 0.12);
+}
+
+.floating-badge > span:last-child {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.floating-badge small {
+    color: var(--text-soft);
+    font-size: 9px;
+}
+
+.floating-badge strong {
+    font-size: 13px;
+}
+
+.hero-product-label {
+    position: absolute;
+    right: 25px;
+    bottom: 22px;
+    left: 25px;
+    display: flex;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero-product-label div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-product-label small {
+    color: var(--text-soft);
+    font-size: 10px;
+}
+
+.hero-product-label strong {
+    font-size: 16px;
+    direction: ltr;
+}
+
+.hero-product-label > span {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.trust-bar {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    margin-top: 55px;
+    padding: 20px 25px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    grid-template-columns: repeat(4, 1fr);
+    background: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(18px);
+}
+
+.trust-bar article {
+    display: flex;
+    padding: 4px 18px;
+    align-items: center;
+    gap: 12px;
+}
+
+.trust-bar article:not(:last-child) {
+    border-left: 1px solid var(--border);
+}
+
+.trust-bar article > span {
+    color: var(--gold);
+    font-size: 20px;
+}
+
+.trust-bar article div {
+    display: flex;
+    flex-direction: column;
+}
+
+.trust-bar strong {
+    font-size: 13px;
+}
+
+.trust-bar small {
+    color: var(--text-soft);
+    font-size: 10px;
+}
+
+/* Section headers */
+
+.section-header {
+    display: flex;
+    margin-bottom: 42px;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.section-header h2 {
+    margin-top: 7px;
+    font-size: clamp(30px, 3.5vw, 48px);
+    line-height: 1.4;
+}
+
+.section-header > p {
+    max-width: 430px;
+    color: var(--text-soft);
+    font-size: 14px;
+}
+
+/* Categories */
+
+.categories-section {
+    background:
+        linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.018), transparent);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.category-card {
+    position: relative;
+    min-height: 285px;
+    overflow: hidden;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    text-align: right;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 0% 0%, var(--category-color), transparent 48%),
+        rgba(255, 255, 255, 0.045);
+    transition:
+        transform 300ms ease,
+        border-color 300ms ease,
+        box-shadow 300ms ease;
+}
+
+.category-card:hover {
+    border-color: var(--gold-border);
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.25);
+    transform: translateY(-9px);
+}
+
+.category-medical {
+    --category-color: rgba(58, 181, 158, 0.2);
+}
+
+.category-hybrid {
+    --category-color: rgba(112, 82, 238, 0.23);
+}
+
+.category-spring {
+    --category-color: rgba(71, 139, 214, 0.2);
+}
+
+.category-hotel {
+    --category-color: rgba(220, 184, 108, 0.2);
+}
+
+.category-number {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    color: rgba(255, 255, 255, 0.18);
+    font-size: 14px;
+}
+
+.category-icon {
+    display: grid;
+    width: 68px;
+    height: 68px;
+    margin-top: 32px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    place-items: center;
+    color: var(--gold);
+    background: rgba(255, 255, 255, 0.07);
+    font-size: 28px;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.04);
+}
+
+.category-card strong {
+    display: block;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.category-card small {
+    display: block;
+    margin-top: 5px;
+    color: var(--text-soft);
+    font-size: 12px;
+}
+
+.category-arrow {
+    position: absolute;
+    bottom: 24px;
+    left: 25px;
+    color: var(--gold);
+    font-size: 21px;
+    transition: transform var(--transition);
+}
+
+.category-card:hover .category-arrow {
+    transform: translateX(-6px);
+}
+
+/* Products */
+
+.products-section {
+    background:
+        radial-gradient(circle at 80% 40%, rgba(99, 75, 210, 0.09), transparent 33%),
+        var(--surface-light);
+    color: var(--text-dark);
+}
+
+.products-section .section-header > p {
+    color: var(--muted-dark);
+}
+
+.product-toolbar {
+    display: flex;
+    margin-bottom: 17px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.product-search {
+    display: flex;
+    width: min(100%, 510px);
+    height: 56px;
+    padding: 0 18px;
+    border: 1px solid rgba(20, 20, 33, 0.1);
+    border-radius: 18px;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(25, 22, 48, 0.05);
+}
+
+.product-search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: var(--text-dark);
+    background: transparent;
+}
+
+.sort-control {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--muted-dark);
+    font-size: 13px;
+}
+
+.sort-control select {
+    padding: 10px 14px;
+    border: 1px solid rgba(20, 20, 33, 0.1);
+    border-radius: 13px;
+    outline: 0;
+    color: var(--text-dark);
+    background: #fff;
+}
+
+.filter-chips {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-chip {
+    padding: 9px 17px;
+    border: 1px solid rgba(20, 20, 33, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    color: var(--muted-dark);
+    background: transparent;
+    transition: var(--transition);
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+    color: #fff;
+    border-color: #211838;
+    background: #211838;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(20, 20, 33, 0.08);
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 20px 45px rgba(23, 19, 44, 0.06);
+    transition:
+        transform 300ms ease,
+        box-shadow 300ms ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 28px 60px rgba(23, 19, 44, 0.12);
+    transform: translateY(-7px);
+}
+
+.product-image {
+    position: relative;
+    height: 235px;
+    overflow: hidden;
+    background: #ebe8ed;
+}
+
+.product-image img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.06);
+}
+
+.product-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 6px 11px;
+    border-radius: 20px;
+    color: #fff;
+    background: rgba(18, 14, 31, 0.78);
+    backdrop-filter: blur(10px);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    display: grid;
+    width: 37px;
+    height: 37px;
+    border: 0;
+    border-radius: 50%;
+    place-items: center;
+    cursor: pointer;
+    color: #3c354b;
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(10px);
+    font-size: 19px;
+}
+
+.favorite-button.active {
+    color: var(--danger);
+}
+
+.quick-view {
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+    left: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 13px;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(18, 14, 31, 0.78);
+    opacity: 0;
+    backdrop-filter: blur(12px);
+    transform: translateY(12px);
+    transition: var(--transition);
+}
+
+.product-card:hover .quick-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-content {
+    padding: 19px;
+}
+
+.product-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-category {
+    color: var(--purple-dark);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.product-rating {
+    color: #a77820;
+    font-size: 11px;
+}
+
+.product-content h3 {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.product-description {
+    min-height: 49px;
+    margin-top: 6px;
+    color: var(--muted-dark);
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.product-footer {
+    display: flex;
+    margin-top: 16px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(20, 20, 33, 0.08);
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-price del {
+    min-height: 18px;
+    color: #a2a0aa;
+    font-size: 10px;
+}
+
+.product-price strong {
+    font-size: 14px;
+}
+
+.add-cart-button {
+    display: grid;
+    width: 43px;
+    height: 43px;
+    flex: 0 0 auto;
+    border: 0;
+    border-radius: 14px;
+    place-items: center;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(135deg, #332452, #171022);
+    box-shadow: 0 12px 25px rgba(30, 20, 46, 0.2);
+    transition: transform var(--transition);
+}
+
+.add-cart-button:hover {
+    transform: rotate(-6deg) scale(1.06);
+}
+
+.empty-state {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.empty-state > span {
+    color: var(--purple);
+    font-size: 50px;
+}
+
+.empty-state p {
+    margin: 8px 0 20px;
+    color: var(--muted-dark);
+}
+
+.empty-state .button-glass {
+    color: var(--text-dark);
+    border-color: rgba(20, 20, 33, 0.12);
+}
+
+/* Collection */
+
+.collection-card {
+    display: grid;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    grid-template-columns: 1.05fr 0.95fr;
+    background:
+        radial-gradient(circle at 85% 0%, rgba(220, 184, 108, 0.12), transparent 32%),
+        linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
+    box-shadow: var(--shadow);
+}
+
+.collection-visual {
+    position: relative;
+    min-height: 600px;
+    padding: 38px;
+}
+
+.collection-image-wrap {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 31px;
+    transform: perspective(900px) rotateY(5deg);
+    box-shadow: 25px 30px 65px rgba(0, 0, 0, 0.3);
+}
+
+.collection-image-wrap img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-glow {
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    filter: blur(50px);
+    background: rgba(121, 92, 255, 0.25);
+}
+
+.collection-rating {
+    position: absolute;
+    z-index: 3;
+    right: 12px;
+    bottom: 72px;
+    display: flex;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    flex-direction: column;
+    background: rgba(10, 12, 25, 0.75);
+    backdrop-filter: blur(17px);
+}
+
+.collection-rating span {
+    color: var(--gold);
+    font-weight: 800;
+}
+
+.collection-rating small {
+    color: var(--text-soft);
+    font-size: 9px;
+}
+
+.collection-content {
+    display: flex;
+    padding: 65px 55px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collection-content h2 {
+    margin-top: 9px;
+    font-size: clamp(35px, 4vw, 57px);
+    line-height: 1.45;
+}
+
+.collection-content h2 span {
+    color: var(--gold);
+}
+
+.collection-content > p {
+    margin-top: 18px;
+    color: var(--text-soft);
+    font-size: 14px;
+}
+
+.feature-list {
+    display: grid;
+    margin-top: 27px;
+    gap: 12px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 13px;
+}
+
+.feature-list li span {
+    display: grid;
+    width: 25px;
+    height: 25px;
+    border-radius: 9px;
+    place-items: center;
+    color: var(--success);
+    background: rgba(113, 213, 170, 0.1);
+}
+
+.collection-purchase {
+    display: flex;
+    margin-top: 35px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.collection-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-price small {
+    color: var(--text-soft);
+    font-size: 10px;
+}
+
+.collection-price strong {
+    color: var(--gold-light);
+    font-size: 18px;
+}
+
+/* Sale */
+
+.sale-section {
+    padding-top: 20px;
+}
+
+.sale-card {
+    position: relative;
+    display: flex;
+    min-height: 370px;
+    overflow: hidden;
+    padding: 55px 65px;
+    border-radius: var(--radius-xl);
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.25), transparent 30%),
+        linear-gradient(115deg, #6f52e6, #3c258e 65%, #29175f);
+    box-shadow: 0 35px 80px rgba(66, 38, 147, 0.3);
+}
+
+.sale-card::before {
+    position: absolute;
+    top: -170px;
+    left: -70px;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    content: "";
+}
+
+.sale-content {
+    position: relative;
+    z-index: 2;
+    max-width: 620px;
+}
+
+.sale-label {
+    display: inline-block;
+    padding: 6px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 11px;
+}
+
+.sale-content h2 {
+    margin-top: 15px;
+    font-size: clamp(33px, 4vw, 53px);
+    line-height: 1.4;
+}
+
+.sale-content h2 span {
+    color: var(--gold-light);
+}
+
+.sale-content p {
+    margin: 10px 0 25px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+}
+
+.discount-code {
+    margin: 0 5px;
+    padding: 3px 9px;
+    border: 1px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    direction: ltr;
+}
+
+.countdown-wrap {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.countdown-wrap > small {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.countdown {
+    display: flex;
+    margin-top: 14px;
+    direction: ltr;
+    gap: 8px;
+}
+
+.countdown div {
+    display: flex;
+    width: 72px;
+    height: 82px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 7, 25, 0.23);
+    backdrop-filter: blur(12px);
+}
+
+.countdown strong {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.countdown span {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 9px;
+}
+
+/* Reviews */
+
+.reviews-section {
+    overflow: hidden;
+}
+
+.slider-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.slider-controls button {
+    display: grid;
+    width: 47px;
+    height: 47px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    place-items: center;
+    cursor: pointer;
+    color: #fff;
+    background: var(--surface);
+    transition: var(--transition);
+}
+
+.slider-controls button:hover {
+    color: #1d1729;
+    background: var(--gold);
+}
+
+.reviews-viewport {
+    overflow: hidden;
+}
+
+.reviews-track {
+    display: flex;
+    transition: transform 500ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.review-slide {
+    min-width: calc(33.333% - 12px);
+    margin-left: 18px;
+    padding: 29px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
+}
+
+.review-quote {
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-size: 52px;
+    line-height: 0.7;
+}
+
+.review-stars {
+    margin-top: 10px;
+    color: var(--gold);
+    font-size: 12px;
+}
+
+.review-text {
+    min-height: 130px;
+    margin-top: 15px;     
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+        name="description"
+        content="فروشگاه تشک رویال؛ خرید تشک طبی، فنری، هیبریدی و هتلی با ضمانت معتبر."
+    >
+
+    <meta name="theme-color" content="#080a18">
+    <title>رویال | تجربه یک خواب سلطنتی</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="ambient-light" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#home" class="brand" aria-label="صفحه اصلی رویال">
+                <span class="brand-mark" aria-hidden="true">♛</span>
+                <span>
+                    <strong>رویال</strong>
+                    <small>خواب سلطنتی</small>
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="منوی اصلی">
+                <a href="#home" class="active">خانه</a>
+                <a href="#categories">دسته‌بندی‌ها</a>
+                <a href="#products">محصولات</a>
+                <a href="#collection">کالکشن ویژه</a>
+                <a href="#reviews">نظرات مشتریان</a>
+            </nav>
+
+            <div class="header-actions">
+                <button
+                    class="icon-button"
+                    id="searchToggle"
+                    type="button"
+                    aria-label="جست‌وجو"
+                >
+                    ⌕
+                </button>
+
+                <button
+                    class="icon-button cart-button"
+                    id="cartToggle"
+                    type="button"
+                    aria-label="سبد خرید"
+                >
+                    🛒
+                    <span id="cartCount">۰</span>
+                </button>
+
+                <button
+                    class="menu-button"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="باز کردن منو"
+                    aria-expanded="false"
+                >
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="header-search" id="headerSearch">
+            <div class="container search-box">
+                <span>⌕</span>
+
+                <input
+                    id="globalSearch"
+                    type="search"
+                    placeholder="نام یا نوع تشک را جست‌وجو کنید..."
+                    autocomplete="off"
+                >
+
+                <button id="closeSearch" type="button" aria-label="بستن">
+                    ×
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">خانه</a>
+            <a href="#categories">دسته‌بندی‌ها</a>
+            <a href="#products">محصولات</a>
+            <a href="#collection">کالکشن ویژه</a>
+            <a href="#reviews">نظرات مشتریان</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero section" id="home">
+            <div class="hero-orb orb-one" aria-hidden="true"></div>
+            <div class="hero-orb orb-two" aria-hidden="true"></div>
+
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="eyebrow">
+                        <i></i>
+                        نسل جدید کالکشن خواب رویال
+                    </span>
+
+                    <h1>
+                        هر شب،
+                        <em>یک خواب سلطنتی</em>
+                        را تجربه کنید
+                    </h1>
+
+                    <p>
+                        تشک‌های رویال با ترکیب طراحی ارگونومیک، متریال
+                        پیشرفته و استانداردهای جهانی ساخته شده‌اند تا
+                        هر روز را با آرامش و انرژی بیشتری آغاز کنید.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#products" class="button button-primary">
+                            مشاهده محصولات
+                            <span>←</span>
+                        </a>
+
+                        <a href="#collection" class="button button-glass">
+                            راهنمای انتخاب تشک
+                        </a>
+                    </div>
+
+                    <div class="hero-rating">
+                        <div class="avatars" aria-hidden="true">
+                            <img src="https://i.pravatar.cc/80?img=47" alt="">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="">
+                            <img src="https://i.pravatar.cc/80?img=32" alt="">
+                        </div>
+
+                        <div>
+                            <strong>★★★★★</strong>
+                            <small>انتخاب بیش از ۱۲٬۰۰۰ خانواده ایرانی</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="royal-stage">
+                        <span class="stage-ring ring-one"></span>
+                        <span class="stage-ring ring-two"></span>
+
+                        <div class="floating-info info-top">
+                            <b>✦</b>
+                            <span>
+                                <small>ضمانت کیفیت</small>
+                                <strong>۱۰ ساله</strong>
+                            </span>
+                        </div>
+
+                        <div class="floating-info info-bottom">
+                            <b>◈</b>
+                            <span>
+                                <small>ارسال و نصب</small>
+                                <strong>رایگان</strong>
+                            </span>
+                        </div>
+
+                        <div class="mattress" aria-hidden="true">
+                            <div class="pillow pillow-right"></div>
+                            <div class="pillow pillow-left"></div>
+                            <div class="mattress-top"></div>
+                            <div class="mattress-side"></div>
+                            <div class="mattress-base"></div>
+                        </div>
+
+                        <div class="stage-caption">
+                            <span>
+                                <small>مدل ویژه رویال</small>
+                                <strong>Imperial Plus</strong>
+                            </span>
+
+                            <b>از ۳۹ میلیون تومان</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container trust-bar reveal">
+                <article>
+                    <span>✓</span>
+                    <div>
+                        <strong>۱۰۰ شب تست خواب</strong>
+                        <small>تجربه بدون ریسک در منزل</small>
+                    </div>
+                </article>
+
+                <article>
+                    <span>♛</span>
+                    <div>
+                        <strong>ضمانت اصالت</strong>
+                        <small>گارانتی رسمی رویال</small>
+                    </div>
+                </article>
+
+                <article>
+                    <span>⚡</span>
+                    <div>
+                        <strong>ارسال سریع</strong>
+                        <small>تحویل در سراسر کشور</small>
+                    </div>
+                </article>
+
+                <article>
+                    <span>☎</span>
+                    <div>
+                        <strong>مشاوره تخصصی</strong>
+                        <small>انتخاب متناسب با بدن شما</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section categories-section" id="categories">
+            <div class="container">
+                <header class="section-header reveal">
+                    <div>
+                        <span class="section-label">انتخاب هوشمندانه</span>
+                        <h2>تشک مناسب سبک خواب شما</h2>
+                    </div>
+
+                    <p>
+                        از مدل‌های طبی تا کالکشن‌های هتلی؛ مجموعه‌ای تخصصی
+                        برای نیازها و سبک‌های خواب متفاوت.
+                    </p>
+                </header>
+
+                <div class="category-grid">
+                    <button
+                        class="category-card medical reveal"
+                        data-category="medical"
+                        type="button"
+                    >
+                        <span class="category-number">۰۱</span>
+                        <i>✚</i>
+                        <strong>تشک طبی</strong>
+                        <small>حمایت استاندارد از ستون فقرات</small>
+                        <b>←</b>
+                    </button>
+
+                    <button
+                        class="category-card hybrid reveal"
+                        data-category="hybrid"
+                        type="button"
+                    >
+                        <span class="category-number">۰۲</span>
+                        <i>◉</i>
+                        <strong>تشک هیبریدی</strong>
+                        <small>ترکیب مموری فوم و فنر پاکتی</small>
+                        <b>←</b>
+                    </button>
+
+                    <button
+                        class="category-card spring reveal"
+                        data-category="spring"
+                        type="button"
+                    >
+                        <span class="category-number">۰۳</span>
+                        <i>⌁</i>
+                        <strong>تشک فنری</strong>
+                        <small>انعطاف‌پذیر و مناسب استفاده روزانه</small>
+                        <b>←</b>
+                    </button>
+
+                    <button
+                        class="category-card hotel reveal"
+                        data-category="hotel"
+                        type="button"
+                    >
+                        <span class="category-number">۰۴</span>
+                        <i>♛</i>
+                        <strong>کالکشن هتلی</strong>
+                        <small>تجربه اقامتگاه‌های پنج ستاره</small>
+                        <b>←</b>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section products-section" id="products">
+            <div class="container">
+                <header class="section-header dark reveal">
+                    <div>
+                        <span class="section-label">فروشگاه رویال</span>
+                        <h2>محبوب‌ترین محصولات</h2>
+                    </div>
+
+                    <p>
+                        محصولات را جست‌وجو، مرتب و متناسب با نیاز خود
+                        انتخاب کنید.
+                    </p>
+                </header>
+
+                <div class="product-toolbar reveal">
+                    <label class="product-search">
+                        <span>⌕</span>
+                        <input
+                            id="productSearch"
+                            type="search"
+                            placeholder="جست‌وجوی نام یا ویژگی محصول..."
+                        >
+                    </label>
+
+                    <label class="sort-control">
+                        <span>مرتب‌سازی:</span>
+
+                        <select id="sortProducts">
+                            <option value="featured">پیشنهاد رویال</option>
+                            <option value="rating">بیشترین امتیاز</option>
+                            <option value="low">کمترین قیمت</option>
+                            <option value="high">بیشترین قیمت</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="filter-chips reveal" id="filterChips">
+                    <button class="active" data-filter="all">همه</button>
+                    <button data-filter="medical">طبی</button>
+                    <button data-filter="hybrid">هیبریدی</button>
+                    <button data-filter="spring">فنری</button>
+                    <button data-filter="hotel">هتلی</button>
+                </div>
+
+                <!-- توسط JavaScript ساخته می‌شود -->
+                <div
+                    class="products-grid"
+                    id="productsGrid"
+                    aria-live="polite"
+                ></div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <span>⌕</span>
+                    <h3>محصولی پیدا نشد</h3>
+                    <p>عبارت جست‌وجو یا فیلتر را تغییر دهید.</p>
+                    <button id="resetFilters" class="button button-dark">
+                        نمایش همه محصولات
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured collection -->
+        <section class="section collection-section" id="collection">
+            <div class="container">
+                <div class="collection-card reveal">
+                    <div class="collection-media">
+                        <img
+                            src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=90"
+                            alt="تشک لوکس کالکشن امپریال رویال"
+                        >
+
+                        <div class="media-rating">
+                            <strong>★ ۴.۹</strong>
+                            <small>براساس ۲٬۴۸۰ نظر</small>
+                        </div>
+                    </div>
+
+                    <div class="collection-content">
+                        <span class="section-label">کالکشن برگزیده</span>
+
+                        <h2>
+                            امپریال پلاس؛
+                            <em>تعریف دوباره آرامش</em>
+                        </h2>
+
+                        <p>
+                            ترکیب هفت لایه تخصصی شامل مموری فوم هوشمند،
+                            لاتکس طبیعی و فنرهای پاکتی مستقل برای کاهش
+                            فشار و جلوگیری از انتقال حرکت.
+                        </p>
+
+                        <ul>
+                            <li><span>✓</span> مموری فوم حساس به دمای بدن</li>
+                            <li><span>✓</span> فنر پاکتی با حداقل انتقال حرکت</li>
+                            <li><span>✓</span> پارچه تنفس‌پذیر و آنتی‌باکتریال</li>
+                            <li><span>✓</span> مناسب افراد دارای کمردرد</li>
+                        </ul>
+
+                        <div class="collection-buy">
+                            <span>
+                                <small>قیمت کالکشن از</small>
+                                <strong>۳۹٬۸۰۰٬۰۰۰ تومان</strong>
+                            </span>
+
+                            <button
+                                class="button button-primary"
+                                data-add-product="4"
+                                type="button"
+                            >
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale -->
+        <section class="section sale-section">
+            <div class="container">
+                <div class="sale-card reveal">
+                    <div>
+                        <span class="sale-label">فروش ویژه رویال</span>
+
+                        <h2>
+                            تا <em>۲۵٪ تخفیف</em>
+                            برای شروع یک خواب بهتر
+                        </h2>
+
+                        <p>
+                            کد
+                            <button
+                                id="copyDiscount"
+                                data-code="ROYAL25"
+                                type="button"
+                            >
+                                ROYAL25
+                            </button>
+                            را هنگام ثبت سفارش وارد کنید.
+                        </p>
+
+                        <a href="#products" class="button button-light">
+                            خرید با تخفیف
+                        </a>
+                    </div>
+
+                    <div class="countdown-area">
+                        <small>زمان باقی‌مانده تا پایان فروش</small>
+
+                        <div class="countdown">
+                            <span><strong id="days">۰۳</strong>روز</span>
+                            <span><strong id="hours">۱۲</strong>ساعت</span>
+                            <span><strong id="minutes">۴۵</strong>دقیقه</span>
+                            <span><strong id="seconds">۲۰</strong>ثانیه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section reviews-section" id="reviews">
+            <div class="container">
+                <header class="section-header reveal">
+                    <div>
+                        <span class="section-label">صدای مشتریان</span>
+                        <h2>تجربه واقعی خواب با رویال</h2>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button id="reviewNext" type="button" aria-label="بعدی">
+                            →
+                        </button>
+                        <button id="reviewPrev" type="button" aria-label="قبلی">
+                            ←
+                        </button>
+                    </div>
+                </header>
+
+                <div class="reviews-viewport reveal">
+                    <div class="reviews-track" id="reviewsTrack"></div>
+                </div>
+
+                <div class="review-dots" id="reviewDots"></div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-card reveal">
+                    <div>
+                        <span class="section-label">باشگاه مشتریان رویال</span>
+                        <h2>پیشنهادهای اختصاصی را از دست ندهید</h2>
+                        <p>
+                            زودتر از همه از کالکشن‌ها و تخفیف‌های جدید
+                            مطلع شوید.
+                        </p>
+                    </div>
+
+                    <form id="newsletterForm">
+                        <input
+                            id="newsletterEmail"
+                            type="email"
+                            placeholder="example@email.com"
+                            aria-label="آدرس ایمیل"
+                            required
+                        >
+
+                        <button class="button button-primary" type="submit">
+                            عضویت
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="#home" class="brand">
+                    <span class="brand-mark">♛</span>
+                    <span>
+                        <strong>رویال</strong>
+                        <small>خواب سلطنتی</small>
+                    </span>
+                </a>
+
+                <p>
+                    تولید محصولات خواب با تمرکز بر سلامت، آرامش و
+                    کیفیت زندگی خانواده‌های ایرانی.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>فروشگاه</h3>
+                <a href="#products">تشک طبی</a>
+                <a href="#products">تشک هیبریدی</a>
+                <a href="#products">تشک فنری</a>
+                <a href="#products">کالکشن هتلی</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>خدمات مشتریان</h3>
+                <a href="#">راهنمای خرید</a>
+                <a href="#">شرایط ضمانت</a>
+                <a href="#">ارسال و تحویل</a>
+                <a href="#">پرسش‌های متداول</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>ارتباط با رویال</h3>
+                <a href="tel:02191000000">۰۲۱-۹۱۰۰۰۰۰۰</a>
+                <a href="mailto:hello@royalsleep.ir">
+                    hello@royalsleep.ir
+                </a>
+                <span>تهران، خیابان ولیعصر، مرکز رویال</span>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© ۱۴۰۵ کلیه حقوق برای برند رویال محفوظ است.</p>
+            <div>
+                <a href="#">حریم خصوصی</a>
+                <a href="#">قوانین استفاده</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart drawer -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <aside
+        class="cart-drawer"
+        id="cartDrawer"
+        aria-label="سبد خرید"
+        aria-hidden="true"
+    >
+        <header>
+            <span>
+                <strong>سبد خرید شما</strong>
+                <small id="cartSummary">۰ محصول</small>
+            </span>
+
+            <button id="closeCart" type="button" aria-label="بستن">×</button>
+        </header>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-empty" id="cartEmpty">
+            <span>🛏️</span>
+            <h3>سبد خرید خالی است</h3>
+            <p>محصول مورد علاقه خود را به سبد اضافه کنید.</p>
+            <button id="startShopping" class="button button-glass">
+                مشاهده محصولات
+            </button>
+        </div>
+
+        <footer id="cartFooter">
+            <div>
+                <span>مبلغ کل</span>
+                <strong id="cartTotal">۰ تومان</strong>
+            </div>
+
+            <button class="button button-primary" type="button">
+                ادامه فرایند خرید
+            </button>
+        </footer>
+    </aside>
+
+    <!-- Product modal -->
+    <div
+        class="product-modal"
+        id="productModal"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true"
+    >
+        <button
+            class="modal-backdrop"
+            data-close-modal
+            aria-label="بستن"
+        ></button>
+
+        <article class="modal-card">
+            <button
+                class="modal-close"
+                data-close-modal
+                type="button"
+                aria-label="بستن"
+            >
+                ×
+            </button>
+
+            <div class="modal-image">
+                <img id="modalProductImage" src="" alt="">
+                <span id="modalProductBadge"></span>
+            </div>
+
+            <div class="modal-content">
+                <span class="section-label" id="modalProductCategory"></span>
+                <h2 id="modalProductTitle"></h2>
+
+                <div class="modal-rating">
+                    <span>★★★★★</span>
+                    <small id="modalProductRating"></small>
+                </div>
+
+                <p id="modalProductDescription"></p>
+                <ul id="modalProductFeatures"></ul>
+
+                <div class="size-selector">
+                    <span>انتخاب ابعاد:</span>
+                    <div>
+                        <button class="active" type="button">۹۰×۲۰۰</button>
+                        <button type="button">۱۲۰×۲۰۰</button>
+                        <button type="button">۱۶۰×۲۰۰</button>
+                    </div>
+                </div>
+
+                <div class="modal-buy">
+                    <strong id="modalProductPrice"></strong>
+
+                    <button
+                        class="button button-primary"
+                        id="modalAddToCart"
+                        type="button"
+                    >
+                        افزودن به سبد خرید
+                    </button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <span>✓</span>
+        <p id="toastMessage"></p>
+    </div>
+
+    <!-- Mobile navigation -->
+    <nav class="mobile-bottom-nav" aria-label="دسترسی سریع">
+        <a href="#home"><span>⌂</span>خانه</a>
+        <a href="#products"><span>◫</span>محصولات</a>
+
+        <button id="mobileCartButton" type="button">
+            <span>🛒</span>
+            سبد
+            <b id="mobileCartCount">۰</b>
+        </button>
+
+        <a href="#reviews"><span>♡</span>نظرات</a>
+    </nav>
+</body>
+</html>
